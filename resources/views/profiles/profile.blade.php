@@ -15,7 +15,7 @@
   <p>バリデーションを通過しました</p>
 </div>
 @endisset
-<form method="POST" action="register" enctype="multipart/form-data">
+<form method="POST" action="profile/register/" enctype="multipart/form-data">
   @csrf
   <table>
     <thead>
@@ -78,6 +78,7 @@
   </table>
 
   <p>
+    <input type="hidden" name="_token" value="{{csrf_token()}}">
     <input type="button" class="btn btn-block btn-lg btn-primary submit_btn" id="submit_btn" value="登録">
   </p>
 </form>

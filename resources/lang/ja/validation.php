@@ -143,7 +143,10 @@ return [
     */
 
     'attributes' => [
-        'user_name'            => 'ユーザー名',
+        'user_name'             => 'ユーザー名',
+        'hobby'                 => '趣味',
+        'career'                => '経歴',
+        'sex'                   => '性別',
     ],
 
 ];
